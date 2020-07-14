@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Пaтрaков](https://up.htmlacademy.ru/adaptive/20/user/1461373).
-* Наставник: Сергей Остаповец.
+* Наставник: [Сергей 🙃 Остаповец](https://htmlacademy.ru/profile/seraphim)
 
 ---
 
