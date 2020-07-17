@@ -1,12 +1,90 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <span class="page-header__logo-name">Pink</span>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <section class="intro">
+        <p class="intro__title">Взгляните на жизнь иначе!</p>
+        <img src="https://via.placeholder.com/320x286">
+      </section>
+      <section class="download">
+        <a class="download__button">Скачать приложение</a>
+        <ul class="download__list">
+					<li class="download__platform">
+						<a class="download__platform download__platform--apple" href="#" aria-label="Скачать в App Store">
+              <img src="https://via.placeholder.com/50x50">
+            </a>
+					</li>
+					<li class="download__platform">
+						<a class="download__platform download__platform--android" href="#" aria-label="Скачать в Play Market">
+              <img src="https://via.placeholder.com/50x50">
+            </a>
+					</li>
+					<li class="download__platform">
+						<a class="download__platform download__platform--windows" href="#" aria-label="Скачать в Microsoft Store">
+              <img src="https://via.placeholder.com/50x50">
+            </a>
+					</li>
+				</ul>
+        <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="features">
+        <p class="features__title">Устали от серости мегаполиса?</p>
+        <p class="features__title">Нам есть что вам предложить!</p>
+        <ul class="features__list">
+          <li class="features__item">
+            <p class="features__item-name">Поднимает настроение</p>
+            <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <p class="features__item-name">Меняет мир вокруг</p>
+            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <p class="features__item-name">Заводит новых друзей</p>
+            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img src="https://via.placeholder.com/157x320">
+      </section>
+    </main>
 
   </body>
 </html>
