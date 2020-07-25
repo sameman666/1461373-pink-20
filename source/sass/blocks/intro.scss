@@ -2,11 +2,11 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   padding-top: 29px;
-  height: 462px;
+  min-height: 462px;
+}
 
-  &--small {
-    height: 237px;
-  }
+.intro--small {
+  min-height: 237px;
 }
 
 .intro__title {
