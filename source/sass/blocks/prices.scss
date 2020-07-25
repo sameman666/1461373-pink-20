@@ -1,0 +1,25 @@
+.prices__item {
+  dl:first-child {
+    background-color: #283645;
+    color: white;
+  }
+}
+
+.prices__name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.prices__amount {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.prices_advantage {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
