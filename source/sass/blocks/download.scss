@@ -1,5 +1,13 @@
 .download {
   background-color: #1d2631;
+  min-height: 271px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 20px 38px 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .download__button {
@@ -12,6 +20,10 @@
 
 .download__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: baseline;
 }
 
 .download__description {
@@ -19,4 +31,6 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
+  margin: 0;
 }

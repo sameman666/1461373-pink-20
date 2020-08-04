@@ -1,0 +1,9 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .effect {
+    display: flex;
+  }
+}

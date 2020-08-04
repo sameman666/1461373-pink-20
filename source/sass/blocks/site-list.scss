@@ -1,5 +1,14 @@
 .site-list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .site-list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .site-list__item {
@@ -7,9 +16,15 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
+  text-align: center;
+  min-height: 63px;
+  border-top: 1px solid #000000; /* Временно */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  a {
-    color: #ffffff;
-    text-decoration: none;
-  }
+.site-list__item a {
+  color: #ffffff;
+  text-decoration: none;
 }

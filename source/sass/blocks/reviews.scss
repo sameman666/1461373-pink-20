@@ -1,5 +1,15 @@
 .reviews {
   background-color: #ffffff;
+  padding: 50px 20px 60px 20px;
+  min-height: 364px;
+  box-sizing: border-box;
+}
+
+.reviews__item {
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__author-name {
@@ -9,7 +19,23 @@
   font-style: normal;
 }
 
+.reviews__author-description {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .reviews__author-description {
+    display: block;
+  }
+}
+
 .reviews__text {
   font-size: 14px;
   line-height: 30px;
+}
+
+@media (min-width: 660px) {
+  .reviews__text {
+    order: -1;
+  }
 }

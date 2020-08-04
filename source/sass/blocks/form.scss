@@ -2,14 +2,134 @@
   background-color: #ffffff;
 }
 
+.form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .form__field {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 660px) {
+  .form__block--data {
+    order: -5;
+  }
+
+  .form__block--apps {
+    order: -4;
+  }
+
+  .form__block--contacts {
+    order: -3;
+  }
+
+  .form__block--achievements {
+    order: -2;
+  }
+
+  .form__block--emotions {
+    order: -1;
+  }
+}
+
+@media (min-width: 660px) {
+  .form__block--contacts .form__input-block {
+    flex-direction: column-reverse;
+  }
+
+  .form__block--emotions .form__input-block {
+    flex-direction: column;
+  }
+
+  .form__block--data .form__input-block {
+    align-items: baseline;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form__block--data {
+    width: 50%;
+  }
+
+  .form__block--apps {
+    width: 50%;
+  }
+
+  .form__block--achievements {
+    width: 100%;
+  }
+
+  .form__block--contacts {
+    width: 100%;
+  }
+
+  .form__block--emotions {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form__block--contacts {
+    display: flex;
+  }
+
+  .form__block--contacts .form__input-block {
+    flex-grow: 1;
+  }
+}
+
+.form__title-block {
+  padding: 54px 22px 22px 22px;
+}
+
 .form__title {
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+.form__block {
+  padding: 22px;
+  padding-bottom: 44px;
+  box-sizing: border-box;
+}
+
+
+@media (min-width: 660px) {
+  .form__block--submit {
+    display: flex;
+  }
 }
 
 .form__input {
   font-size: 18px;
   line-height: 30px;
+  height: 59px;
+  padding-left: 20px;
+}
+
+@media (min-width: 660px) {
+  .form__input {
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+}
+
+.form__input-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 29px;
+}
+
+@media (min-width: 660px) {
+  .form__input-block {
+    flex-direction: row;
+  }
 }
 
 .form__label {
@@ -17,6 +137,11 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #d22856;
+  padding-left: 25px;
+}
+
+.form__input--big {
+  height: 197px;
 }
 
 .form__input::placeholder {
@@ -27,22 +152,31 @@
   background-color: #f2f2f2;
 }
 
-.form__fieldset {
+.form__achievements,
+.form__apps {
   border: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.form__legend {
+.form__achievements-title,
+.form__apps-title {
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.form-list {
+.form__achievements-list,
+.form__apps-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.form__achievements-label {
+.form__achievements-label,
+.form__apps-label {
   font-size: 18px;
   line-height: 30px;
 }
@@ -51,12 +185,25 @@
   background-color: #f2f2f2;
 }
 
+.form__button {
+  display: block;
+}
+
 .form__required-text {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  text-align: center;
 
   span {
     color: #d22856;
   }
+}
+
+.form__failure-pop-up {
+  display: none;
+}
+
+.form__success-pop-up {
+  display: none;
 }

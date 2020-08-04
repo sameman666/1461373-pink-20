@@ -2,7 +2,22 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   padding-top: 29px;
-  min-height: 462px;
+  min-height: 396px;
+  position: relative;
+  box-sizing: border-box;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro img {
+  width: fit-content;
+}
+
+@media (min-width: 660px) {
+  .intro img {
+    order: 2;
+  }
 }
 
 .intro--small {
@@ -13,5 +28,7 @@
   color: #ffffff;
   font-weight: 300;
   line-height: 120%;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 263px;
 }
