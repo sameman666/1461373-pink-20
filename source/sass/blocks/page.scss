@@ -3,4 +3,6 @@
   margin: 0;
   font-family: "Open Sans", "Tahoma", sans-serif;
   color: #283645;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }

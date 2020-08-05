@@ -1,5 +1,24 @@
 .contacts {
   background-color: #ffffff;
+  min-height: 395px;
+  padding: 50px 39px 22px 39px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.contacts__list {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 660px) {
+  .contacts__list {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .contacts__title {
@@ -7,16 +26,31 @@
   font-size: 24px;
   line-height: 1.2;
   color: #283645;
+  margin: 0;
 }
+
+@media (min-width: 660px) {
+  .contacts__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts__item {
+    width: 33%;
+  }
+}
+
 
 .contacts__item p {
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
+  margin: 0;
 }
 
 .contacts__item a,
-address {
+.contacts__item address {
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
