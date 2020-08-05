@@ -26,6 +26,12 @@
   text-align: center;
 }
 
+@media (min-width: 660px) {
+  .photos__intro {
+    font-size: 18px;
+  }
+}
+
 .photos__intro-block {
   min-height: 184px;
   box-sizing: border-box;

@@ -7,11 +7,6 @@
   overflow: hidden;
 }
 
-.prices-slider {
-  position: relative;
-  min-height: 460px;
-}
-
 .prices__list {
   display: flex;
   position: absolute;
@@ -72,17 +67,17 @@
   text-transform: uppercase;
 }
 
-.first-column {
+.prices__item:first-child {
   display: none;
 }
 
 @media (min-width: 660px) {
-  .first-column {
+  .prices__item:first-child {
     display: block;
     padding-top: 100px;
   }
 
-  .first-column dl:first-child {
+  .prices__item:first-child dl:first-child {
     display: none;
   }
 }
