@@ -15,24 +15,24 @@
 }
 
 @media (min-width: 660px) {
-  .form__block--data {
-    order: -5;
-  }
-
   .form__block--apps {
-    order: -4;
+    order: 1;
   }
 
   .form__block--contacts {
-    order: -3;
+    order: 2;
   }
 
   .form__block--achievements {
-    order: -2;
+    order: 3;
   }
 
   .form__block--emotions {
-    order: -1;
+    order: 4;
+  }
+
+  .form__block--submit {
+    order: 5;
   }
 }
 
@@ -82,15 +82,12 @@
   }
 }
 
-.form__title-block {
-  padding: 54px 22px 22px 22px;
-}
-
 .form__title {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   margin: 0;
+  padding: 54px 22px 22px 22px;
 }
 
 .form__block {
