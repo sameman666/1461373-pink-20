@@ -4,4 +4,11 @@
   margin: 0;
   padding: 0;
   justify-content: space-between;
+  min-width: 140px;
+}
+
+@media (min-width: 1200px) {
+  .social-list {
+    justify-content: space-around;
+  }
 }

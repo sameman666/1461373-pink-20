@@ -7,7 +7,8 @@
 @media (min-width: 1200px) {
   .site-list {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -18,10 +19,21 @@
   font-weight: bold;
   text-align: center;
   min-height: 63px;
-  border-top: 1px solid #000000; /* Временно */
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #000000;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .site-list__item {
+    font-weight: normal;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 18px;
+    border: none;
+  }
 }
 
 .site-list__item a {

@@ -6,4 +6,76 @@
   .effect {
     display: flex;
   }
+
+  .effect__image {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 54px 72px 10px 20px;
+  }
+
+  .effect__image img {
+    display: block;
+  }
+
+  .effect__description {
+    width: 50%;
+    padding-top: 96px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .effect__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    width: 168px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .effect__text {
+    margin: 0;
+    width: 310px;
+  }
+
+  .effect__link {
+    color: #d22856;
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .effect {
+    background-color: #f2f2f2;
+    min-height: 429px;
+  }
+
+  .effect__image {
+    width: 500px;
+    padding: 0;
+  }
+
+  .effect__description {
+    padding: 0;
+    width: 534px;
+    padding-top: 108px;
+  }
+
+  .effect__title {
+    width: auto;
+    margin-bottom: 25px;
+  }
+
+  .effect__text {
+    width: auto;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 30px;
+  }
 }

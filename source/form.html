@@ -46,7 +46,8 @@
         <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
       <section class="form">
-        <p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <span class="form__title--appeal">Пожалуйста, заполните форму ниже:</span></p>
         <form action="https://echo.htmlacademy.ru" class="form__field"  method="post">
           <div class="form__block form__block--data">
             <div class="form__input-block">
@@ -94,14 +95,19 @@
             </fieldset>
           </div>
           <div class="form__block form__block--contacts">
-            <div class="form__input-block">
-              <label class="form__label" for="phone">Номер телефона</label>
-              <input class="form__input" type="number" id="phone" name="phone" placeholder="Номер, пожалуйста">
-            </div>
-            <div class="form__input-block">
-              <label class="form__label" for="email">Адрес почты</label>
-              <input class="form__input" type="email" id="email" name="email" placeholder="Введите почту *">
-            </div>
+            <fieldset class="form__contacts">
+              <legend class="form__contacts-title">Контактная информация</legend>
+              <div class="form__contacts-wrapper">
+                <div class="form__input-block">
+                  <label class="form__label" for="phone">Номер телефона</label>
+                  <input class="form__input" type="number" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="form__input-block">
+                  <label class="form__label" for="email">Адрес почты</label>
+                  <input class="form__input" type="email" id="email" name="email" placeholder="Введите почту *">
+                </div>
+              </div>
+            </fieldset>
           </div>
           <div class="form__block form__block--apps">
             <fieldset class="form__apps">
@@ -113,7 +119,7 @@
                 </li>
                 <li class="form__apps-item">
                   <input class="form__apps-input" type="radio" id="Android" name="device">
-                  <label class="form__apps-label" for="Android">Pink для Android</label>
+                  <label class="form__apps-label" for="Android">Pink на Android</label>
                 </li>
                 <li class="form__apps-item">
                   <input class="form__apps-input" type="radio" id="windows" name="device">
@@ -123,14 +129,14 @@
             </fieldset>
           </div>
           <div class="form__block form__block--emotions">
-            <div class="form__input-block">
-              <label class="form__label" for="emotions">Опишите свои эмоции</label>
-              <input class="form__input form__input--big" type="text" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
-            </div>
+            <fieldset class="form__emotions">
+              <legend class="form__apps-title">Опишите свои эмоции</legend>
+              <textarea class="form__input form__input--big" type="text" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
           </div>
           <div class="form__block form__block--submit">
             <button class="form__button" type="submit">Отправить форму</button>
-            <p class="form__required-text"><span>*</span> — обязательные поля</p>
+            <p class="form__required-text"><span>*</span> — обязательные<span class="form__additional-text"> для заполнения</span> поля</p>
           </div>
         </form>
         <div class="form__failure-pop-up">
@@ -171,7 +177,9 @@
       </section>
       <section class="page-footer__credits">
         <span>Разработано</span>
-        <img src="img/htmlacademy.svg" width="27" height="34">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__credits-logo">
+          <img src="img/htmlacademy.svg" width="40" height="40">
+        </a>
       </section>
     </footer>
 

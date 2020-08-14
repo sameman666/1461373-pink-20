@@ -43,10 +43,12 @@
 
     <main class="page-main">
       <section class="intro">
-        <h1 class="intro__title">Взгляните на жизнь иначе!</h1>
-        <img src="img/iphone-hand-mobile@1x.png">
+        <h1 class="intro__title">Взгляните на&nbspжизнь иначе!</h1>
+        <div class="intro__image">
+          <img src="img/iphone-hand-mobile@1x.png" width="258" height="286">
+        </div>
         <section class="download">
-          <a href="" class="download__button">Скачать приложение</a>
+          <a href="" class="download__button button">Скачать&nbspприложение</a>
           <ul class="download__list">
             <li class="download__platform">
               <a class="download__platform download__platform--apple" href="#" aria-label="Скачать в App Store">
@@ -70,7 +72,7 @@
       <section class="features">
         <div class="features__title-block">
           <p class="features__title">Устали от серости мегаполиса?</p>
-          <p class="features__title">Нам есть что вам предложить!</p>
+          <p class="features__title">Нам есть, что вам предложить!</p>
         </div>
         <div class="features__list-block">
           <ul class="features__list">
@@ -80,21 +82,26 @@
             </li>
             <li class="features__item">
               <p class="features__item-name">Меняет мир вокруг</p>
-              <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbspэффект</p>
             </li>
             <li class="features__item">
               <p class="features__item-name">Заводит новых друзей</p>
               <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img src="img/iphone-screen-mobile@1x.png">
+          <div class="features__image">
+            <img src="img/iphone-screen-mobile@1x.png">
+          </div>
         </div>
       </section>
       <section class="effect">
+        <div class="effect__image">
+          <img src="https://via.placeholder.com/238x276">
+        </div>
         <div class="effect__description">
-          <p>Эффект на 24 часа!</p>
-          <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a href="#">Узнать больше об исследовании</a>
+          <p class="effect__title">Эффект на&nbsp24 часа!</p>
+          <p class="effect__text">Британские ученые провели исследования и&nbspдоказали, что&nbspположительный эффект от&nbspиспользования приложения длится целые сутки!</p>
+          <a class="effect__link" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
       <section class="reviews">
@@ -107,9 +114,9 @@
             </blockquote>
           </div>
           <div class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle slider__toggle--current" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
           </div>
         </div>
       </section>
@@ -123,15 +130,12 @@
               </dl>
               <dl>
                 <dt class="prices__advantage">Розовый фильтр</dt>
-                <dd><img src="img/icon-yes.svg"></dd>
               </dl>
               <dl>
                 <dt class="prices__advantage">Смайлики</dt>
-                <dd><img src="img/icon-no.svg"></dd>
               </dl>
               <dl>
                 <dt class="prices__advantage">Комментарии</dt>
-                <dd><img src="img/icon-no.svg"></dd>
               </dl>
             </div>
             <div class="prices__item">
@@ -188,14 +192,14 @@
             </div>
           </div>
           <div class="prices__toggles prices-slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle slider__toggle--current" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle slider__toggle--current" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
           </div>
         </div>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь&nbspс нами!</h2>
         <div class="contacts__list">
           <div class="contacts__item">
             <p>Звоните:</p>
@@ -212,7 +216,7 @@
         </div>
       </section>
       <section class="map">
-        <img src="img/bg-map-mobile@1x.png" Alt="Карта">
+        <img src="https://via.placeholder.com/320x200" Alt="Карта">
       </section>
     </main>
 
@@ -241,7 +245,9 @@
       </section>
       <section class="page-footer__credits">
         <span>Разработано</span>
-        <img src="img/htmlacademy.svg" width="27" height="34">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__credits-logo">
+          <img src="img/htmlacademy.svg" width="40" height="40">
+        </a>
       </section>
     </footer>
 
