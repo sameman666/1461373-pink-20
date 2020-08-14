@@ -1,3 +1,15 @@
 .map {
   text-align: center;
 }
+
+@media (min-width: 660px) {
+  .map {
+    min-height: 374px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .map {
+    min-height: 502px;
+  }
+}

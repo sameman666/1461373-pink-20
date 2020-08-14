@@ -1,3 +1,21 @@
 .slider__toggles {
-  text-align: center;
+  width: 56px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 1200px) {
+  .slider__toggles {
+    display: none;
+  }
+}
+
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  background-color: fade-out(#283645, 0.7);
+  border: 1px solid fade-out(#283645, 0.7);
+  border-radius: 6px;
+  padding: 0;
 }

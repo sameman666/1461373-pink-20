@@ -6,10 +6,31 @@
   display: block;
   padding-top: 23px;
   padding-left: 20px;
+  min-height: 69px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #000000;
+}
+
+@media (min-width: 660px) {
+  .page-header > a {
+    min-height: 109px;
+  }
 }
 
 @media (min-width: 1200px) {
   .page-header {
     display: flex;
+    background-color: fade-out($color: #000000, $amount: 0.7);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 0 130px;
+    box-sizing: border-box;
+  }
+
+  .page-header > a {
+    padding: 0;
+    padding-top: 27px;
+    border: 0;
   }
 }
