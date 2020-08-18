@@ -43,10 +43,10 @@
   padding-top: 25px;
 }
 
-
 .intro__title {
   color: #ffffff;
   font-weight: 300;
+  font-size: 24px;
   line-height: 120%;
   margin: 0 auto;
   text-align: center;
@@ -57,7 +57,6 @@
 .intro--small .intro__title {
   line-height: 33px;
 }
-
 
 @media (min-width: 660px) {
   .intro__title {

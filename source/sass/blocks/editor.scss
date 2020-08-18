@@ -3,14 +3,11 @@
   padding: 20px 20px 33px 20px;
 }
 
-@media (min-width: 660px) {
-  .editor__image img {
-    display: block;
-    width: 300px;
-    height: 400px;
+.editor__image {
+  @include tablet {
+    line-height: 0;
   }
 }
-
 
 .editor__options {
   display: flex;
@@ -31,10 +28,8 @@
   flex-direction: column;
   position: relative;
   padding: 0 20px;
-}
 
-@media (min-width: 660px) {
-  .editor__range-block {
+  @include tablet {
     margin-bottom: 57px;
     justify-content: center;
     padding: 0;
@@ -71,6 +66,7 @@
 }
 
 .editor__button {
+  @include button;
   color: #d22856;
   border: 3px solid #d22856;
   margin-bottom: 12px;
