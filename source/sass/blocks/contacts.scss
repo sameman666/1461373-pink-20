@@ -1,21 +1,22 @@
 .contacts {
   background-color: #ffffff;
-  min-height: 395px;
-  padding: 40px 39px 15px 39px;
+  min-height: 411px;
+  padding: 42px 39px 15px 39px;
   box-sizing: border-box;
   text-align: center;
 }
 
 @media (min-width: 660px) {
   .contacts {
-    padding: 40px 10px 5px 10px;
+    padding: 42px 10px 5px 10px;
+    min-height: 404px;
   }
 }
 
 @media (min-width: 1200px) {
   .contacts {
-    min-height: 365px;
-    padding: 60px 115px 0 115px;
+    min-height: 361px;
+    padding: 55px 115px 0 115px;
   }
 }
 
@@ -119,4 +120,16 @@
   line-height: 33px;
   text-decoration: none;
   color: #d22856;
+}
+
+.contacts__item a:hover,
+.contacts__item address:hover {
+  text-decoration: underline;
+  color: #283645;
+}
+
+.contacts__item a:active,
+.contacts__item address:active {
+  opacity: 0.3;
+  text-decoration: none;
 }

@@ -39,4 +39,20 @@
 .site-list__item a {
   color: #ffffff;
   text-decoration: none;
+  line-height: 40px;
+}
+
+.site-list__item a:hover {
+  color: #d22856;
+}
+
+.site-list__item a:active {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.site-list__active-link {
+  @include desktop {
+    border-bottom: 2px solid #ffffff;
+  }
 }

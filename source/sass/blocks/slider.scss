@@ -1,8 +1,9 @@
 .slider__toggles {
-  width: 56px;
+  width: 59px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: 1200px) {
@@ -15,7 +16,26 @@
   width: 6px;
   height: 6px;
   background-color: fade-out(#283645, 0.7);
-  border: 1px solid fade-out(#283645, 0.7);
+  border: none;
   border-radius: 6px;
   padding: 0;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.slider__toggle:hover {
+  background-color: fade-out(#283645, 0.4);
+}
+
+.slider__toggle:active {
+  background-color: fade-out(#283645, 0.9);
+}
+
+.slider__toggle:focus {
+  outline: 0;
+}
+
+.slider__toggle--current {
+  border: 3px solid #283645;
+  background-color: #ffffff;
 }

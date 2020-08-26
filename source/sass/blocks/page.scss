@@ -1,8 +1,22 @@
 .page__body {
-  background-color: #ffffff;
+  background-color: #e5e5e5;
   margin: 0;
   font-family: "Open Sans", "Tahoma", sans-serif;
   color: #283645;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+}
+
+.page__body-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+
+  @include tablet {
+    width: 660px;
+  }
+
+  @include desktop {
+    width: 1200px;
+  }
 }
