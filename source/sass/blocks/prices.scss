@@ -5,7 +5,7 @@
   padding-bottom: 49px;
   background-color: #f2f2f2;
   overflow: hidden;
-  background-image: url("../../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -62,15 +62,15 @@
 
 .prices__item--hit dl:first-child {
   position: relative;
-  background-image: url("../../img/bg-hit.svg");
+  background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
 
   @include tablet {
-    background-image: url("../../img/bg-hit-tablet.svg");
+    background-image: url("../img/bg-hit-tablet.svg");
   }
 
   @include desktop {
-    background-image: url("../../img/bg-hit.svg");
+    background-image: url("../img/bg-hit.svg");
   }
 }
 
