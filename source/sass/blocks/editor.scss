@@ -1,4 +1,13 @@
 .editor {
+  min-height: 511px;
+  background-color: #ffffff;
+
+  @include desktop {
+    min-height: 542px;
+  }
+}
+
+.editor__wrapper {
   background-color: #f2f2f2;
   padding: 20px 20px 33px 20px;
 }
@@ -12,13 +21,29 @@
 .editor__options {
   display: flex;
   min-height: 120px;
-  padding: 0 20px;
+  padding: 0 37px;
+  padding-top: 4px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.editor__options-icon {
+  fill: rgba(#283645, 0.3);
+  cursor: pointer;
+}
+
+.editor__options-icon--active {
+  fill: #d22856;
+}
+
+.editor__options svg:hover {
+  fill: rgba(#283645, 0.5);
 }
 
 .editor__buttons {
   display: flex;
   flex-direction: column;
-  margin-top: 27px;
+  margin-top: 23px;
   padding-top: 38px;
 }
 
@@ -65,6 +90,10 @@
   cursor: pointer;
 }
 
+.editor__toggle--active {
+  background-color: #d22856;
+}
+
 .editor__button {
   @include button;
   color: #d22856;
@@ -72,8 +101,33 @@
   margin-bottom: 12px;
 }
 
+.editor__button-upload:hover {
+  color: #ffffff;
+  background-color: #d22856;
+}
+
+.editor__button-upload:active {
+  color: rgba(#ffffff, 0.3);
+}
+
+.editor__button-cancel {
+  color: rgba(#283645, 0.1);
+  border: 3px solid rgba(#283645, 0.1);
+}
+
+.editor__button-cancel:hover {
+  color: rgba(#283645, 0.3);
+  border: 3px solid rgba(#283645, 0.3);
+}
+
+.editor__button-cancel:active {
+  color: rgba(#ffffff, 0.3);
+  background-color: rgba(#283645, 0.3);
+  border-color: rgba(#283645, 0);
+}
+
 @media (min-width: 660px) {
-  .editor {
+  .editor__wrapper {
     display: flex;
     min-height: 511px;
     box-sizing: border-box;
@@ -90,6 +144,7 @@
     flex-direction: column;
     width: 100px;
     padding: 0;
+    padding-top: 9px;
   }
 
   .editor__range {
@@ -147,16 +202,16 @@
 @media (min-width: 1200px) {
   .editor__options {
     width: 182px;
+    padding-top: 0;
   }
 }
 
 @media (min-width: 1200px) {
-  .editor {
+  .editor__wrapper {
     width: 940px;
     margin: 0 auto;
     min-height: 514px;
-    padding: 57px 60px 35px 80px;
-    margin-bottom: 28px;
+    padding: 57px 60px 0 80px;
   }
 
   .editor__buttons {
@@ -164,11 +219,103 @@
     align-items: flex-end;
     justify-content: space-between;
     padding-left: 90px;
-    padding-top: 105px;
+    padding-top: 45px;
     padding-right: 0;
+    padding-bottom: 36px;
   }
 
   .editor__button {
     min-width: 183px;
+  }
+}
+
+.icon-editor-crop {
+  width: 44px;
+  height: 44px;
+
+  @include tablet {
+    width: 22px;
+    height: 22px;
+    margin-left: 20px;
+  }
+
+  @include desktop {
+    width: 49px;
+    height: 49px;
+    margin-left: 41px;
+  }
+}
+
+.icon-editor-fill {
+  width: 51px;
+  height: 45px;
+  margin-left: 35px;
+  margin-top: 6px;
+
+  @include tablet {
+    width: 24px;
+    height: 22px;
+    margin-top: 54px;
+    margin-left: 18px;
+    fill: #d22856;
+  }
+
+  @include desktop {
+    width: 48px;
+    height: 48px;
+    margin-top: 22px;
+    margin-left: 45px;
+  }
+}
+
+.icon-editor-contrast {
+  width: 32px;
+  height: 32px;
+  margin-left: 33px;
+
+  @include tablet {
+    width: 16px;
+    height: 16px;
+    margin-top: 48px;
+    margin-left: 20px;
+    fill: #d22856;
+  }
+
+  @include desktop {
+    width: 32px;
+    height: 32px;
+    margin-top: 28px;
+    margin-left: 42px;
+  }
+}
+
+.editor__range {
+  padding-top: 3px;
+  position: relative;
+
+  @include tablet {
+    padding-top: 14px;
+  }
+}
+
+.editor__range-block::after {
+  content: "";
+  width: 320px;
+  height: 1px;
+  background-color: rgba(#283645, 0.1);
+  position: absolute;
+  left: -20px;
+  top: 36px;
+
+  @include tablet {
+    width: 275px;
+    left: -55px;
+    top: 42px;
+  }
+
+  @include desktop {
+    width: 410px;
+    left: -92px;
+    top: 42px;
   }
 }

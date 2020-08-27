@@ -1,16 +1,38 @@
 .effect {
   display: none;
+  background-color: #ffffff;
 }
 
 @media (min-width: 660px) {
   .effect {
     display: flex;
+    min-height: 333px;
   }
 
   .effect__image {
+    display: flex;
     width: 50%;
     box-sizing: border-box;
     padding: 54px 72px 10px 20px;
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: 39px 108px, 20px 51px;
+    background-size: 199px 198px, 238px 276px;
+  }
+
+  .effect__image p {
+    margin: auto;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 163px;
+    color: #d22856;
+    margin-top: 68px;
+
+    @include desktop {
+      font-size: 120px;
+      margin-top: 122px;
+      margin-left: 212px;
+    }
   }
 
   .effect__image img {
@@ -19,7 +41,7 @@
 
   .effect__description {
     width: 50%;
-    padding-top: 96px;
+    padding-top: 92px;
     font-size: 14px;
     line-height: 24px;
   }
@@ -42,24 +64,28 @@
     color: #d22856;
     display: block;
     margin-top: 10px;
+    text-decoration: underline;
   }
 }
 
 @media (min-width: 1200px) {
   .effect {
     background-color: #f2f2f2;
-    min-height: 429px;
+    min-height: 423px;
   }
 
   .effect__image {
     width: 500px;
     padding: 0;
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+    background-position: 154px 81px, 129px 6px;
+    background-size: 252px 252px, 305px 357px;
   }
 
   .effect__description {
     padding: 0;
     width: 534px;
-    padding-top: 108px;
+    padding-top: 102px;
   }
 
   .effect__title {

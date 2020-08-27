@@ -9,6 +9,71 @@
   min-height: 69px;
   box-sizing: border-box;
   border-bottom: 1px solid #000000;
+  width: fit-content;
+
+  @include tablet {
+    padding-top: 27px;
+  }
+}
+
+.logo-pink-white-tablet,
+.logo-pink-white-desktop {
+  display: none;
+}
+
+.logo-pink-white-mobile {
+  fill: #ffffff;
+}
+
+.logo-pink-white-mobile:hover {
+  fill: #d22856;
+}
+
+.logo-pink-white-mobile:active {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+@media (min-width: 660px) {
+  .logo-pink-white-mobile,
+  .logo-pink-white-desktop {
+    display: none;
+  }
+
+  .logo-pink-white-tablet {
+    display: block;
+    fill: #ffffff;
+  }
+
+  .logo-pink-white-tablet:hover {
+    fill: #d22856;
+  }
+
+  .logo-pink-white-tablet:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-pink-white-mobile,
+  .logo-pink-white-tablet {
+    display: none;
+  }
+
+  .logo-pink-white-desktop {
+    display: block;
+    fill: #ffffff;
+  }
+
+  .logo-pink-white-desktop:hover {
+    fill: #d22856;
+  }
+
+  .logo-pink-white-desktop:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 660px) {

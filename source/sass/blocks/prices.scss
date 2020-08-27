@@ -1,16 +1,20 @@
 .prices {
   min-height: 460px;
   box-sizing: border-box;
-  padding-top: 83px;
+  padding-top: 105px;
   padding-bottom: 49px;
   background-color: #f2f2f2;
   overflow: hidden;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -1px;
 }
 
 @media (min-width: 660px) {
   .prices {
-    padding-top: 58px;
-    margin-top: 15px;
+    padding-top: 108px;
     padding-bottom: 0;
     min-height: auto;
   }
@@ -18,7 +22,7 @@
 
 @media (min-width: 1200px) {
   .prices {
-    padding-top: 157px;
+    padding-top: 152px;
     min-height: 534px;
   }
 }
@@ -56,6 +60,39 @@
   width: 280px;
 }
 
+.prices__item--hit dl:first-child {
+  position: relative;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+
+  @include tablet {
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  @include desktop {
+    background-image: url("../img/bg-hit.svg");
+  }
+}
+
+.prices__item--hit dl:first-child::before {
+  content: "ХИТ";
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 12px;
+  top: 22px;
+  font-size: 14px;
+
+  @include tablet {
+    left: 6px;
+    top: 18px;
+  }
+
+  @include desktop {
+    left: 12px;
+    top: 22px;
+  }
+}
+
 @media (min-width: 660px) {
   .prices__item {
     width: 153px;
@@ -65,11 +102,11 @@
 
 .prices__item dl {
   display: flex;
-  min-height: 59px;
-  padding: 14px 17px 9px 20px;
+  min-height: 61px;
+  padding: 13px 17px 9px 20px;
   box-sizing: border-box;
   justify-content: space-between;
-  border: 2px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
   border-top: none;
   background-color: #ffffff;
 }
@@ -79,8 +116,8 @@
   background-color: #283645;
   color: white;
   text-align: center;
-  min-height: 98px;
-  padding-top: 9px;
+  min-height: 100px;
+  padding-top: 11px;
 }
 
 .prices__item dl,
@@ -128,6 +165,7 @@
   width: 55px;
   margin: 0 auto;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: 660px) {
@@ -137,10 +175,8 @@
   }
 
   .prices__item dl {
-    min-height: 45px;
+    min-height: 47px;
     padding: 0;
-    margin-bottom: 2px;
-    border: none;
   }
 
   .prices__item dd {
@@ -150,8 +186,7 @@
   .prices__item dl:first-child {
     min-height: 79px;
     padding: 0;
-    border: 2px solid #283645;
-    padding-top: 8px;
+    padding-top: 12px;
   }
 
   .prices__item:first-child dl:first-child {
@@ -178,19 +213,20 @@
 
   .prices__item {
     width: 234px;
+    margin-left: 1px;
   }
 
   .prices__item:first-child {
-    padding-top: 100px;
+    padding-top: 98px;
   }
 
   .prices__item:first-child dl {
-    padding-top: 16px;
+    padding-top: 12px;
     padding-left: 20px;
   }
 
   .prices__item dl {
-    min-height: 59px;
+    min-height: 61px;
   }
 
   .prices__item dl:first-child {

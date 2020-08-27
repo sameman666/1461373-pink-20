@@ -5,10 +5,43 @@
   padding: 0;
   justify-content: space-between;
   min-width: 140px;
+
+  @include desktop {
+    justify-content: stretch;
+    padding-top: 70px;
+    padding-left: 4px;
+  }
 }
 
-@media (min-width: 1200px) {
-  .social-list {
-    justify-content: space-around;
+.social-list__item {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid;
+  border-color: rgba(#283645, 0.1);
+  border-radius: 50%;
+  margin-left: 9px;
+
+  @include desktop {
+    margin-left: 6px;
   }
+}
+
+.social-list__item:hover {
+  border-color: #283645;
+}
+
+.social-list__item:active {
+  opacity: 0.1;
+}
+
+.social-list__item:first-child {
+  margin-left: 0;
+}
+
+.social-list__link {
+  fill: #d22856;
+  padding: 14px;
 }

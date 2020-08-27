@@ -1,5 +1,30 @@
 .map {
   text-align: center;
+  min-height: 200px;
+  background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%, cover;
+
+  @include retina {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+
+  @include tablet {
+    background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@1x.jpg");
+    background-position-y: -1px;
+
+    @include retina {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+  }
+
+  @include desktop {
+    background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-desktop@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
+  }
 }
 
 @media (min-width: 660px) {
