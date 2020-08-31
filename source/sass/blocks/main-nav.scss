@@ -4,59 +4,16 @@
   position: relative;
 }
 
-.main-nav__toggle {
-  width: 23px;
-  height: 23px;
-  position: absolute;
-  right: 20px;
-  top: -46px;
-  border: none;
-  background-color: #283645;
-  padding: 0;
-}
-
-.main-nav__toggle::after {
-  content: "";
-  width: 29px;
-  height: 2px;
-  background-color: #ffffff;
-  position: absolute;
-  left: -3px;
-  top: 10px;
-  transform: rotate(45deg);
-}
-
-.main-nav__toggle::before {
-  content: "";
-  width: 29px;
-  height: 2px;
-  background-color: #ffffff;
-  position: absolute;
-  left: -3px;
-  top: 10px;
-  transform: rotate(135deg);
-}
-
-@media (min-width: 660px) {
-  .main-nav__toggle {
-    top: -66px;
-  }
-}
-
 @media (min-width: 1200px) {
   .main-nav {
     flex-direction: row;
     flex-grow: 1;
-    padding-left: 173px;
+    padding-left: 106px;
     padding-top: 23px;
   }
 
   .main-nav__wrapper {
     flex-grow: 1;
-  }
-
-  .main-nav__toggle {
-    display: none;
   }
 }
 

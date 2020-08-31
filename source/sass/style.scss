@@ -1,4 +1,3 @@
-@import "base.scss";
 @import "mixin.scss";
 @import "fonts.scss";
 @import "blocks/page.scss";
@@ -20,4 +19,5 @@
 @import "blocks/prices-slider.scss";
 @import "blocks/map.scss";
 @import "blocks/effect.scss";
-@import "../css/normalize.css";
+@import "normalize.scss";
+@import "base.scss";

@@ -5,8 +5,14 @@
 
 @media (min-width: 660px) {
   .effect {
-    display: flex;
+    display: block;
+  }
+
+  .effect__wrapper {
     min-height: 333px;
+    display: flex;
+    width: 660px;
+    margin: 0 auto;
   }
 
   .effect__image {
@@ -71,6 +77,11 @@
 @media (min-width: 1200px) {
   .effect {
     background-color: #f2f2f2;
+  }
+
+  .effect__wrapper {
+    width: 1200px;
+    margin: 0 auto;
     min-height: 423px;
   }
 

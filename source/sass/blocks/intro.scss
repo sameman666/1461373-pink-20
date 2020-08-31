@@ -15,6 +15,19 @@
   }
 }
 
+.intro__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 660px;
+  }
+
+  @include desktop {
+    width: 1200px;
+  }
+}
+
 @media (min-width: 660px) {
   .intro {
     padding-top: 90px;
@@ -30,7 +43,6 @@
 @media (min-width: 1200px) {
   .intro {
     padding-top: 210px;
-    padding-left: 120px;
     min-height: 853px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
 

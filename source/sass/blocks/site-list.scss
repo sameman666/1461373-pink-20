@@ -51,7 +51,7 @@
   opacity: 0.3;
 }
 
-.site-list__active-link {
+.site-list__link--active {
   @include desktop {
     border-bottom: 2px solid #ffffff;
   }
