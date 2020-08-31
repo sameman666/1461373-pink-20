@@ -1,14 +1,30 @@
 .contacts {
   background-color: #ffffff;
   min-height: 411px;
+}
+
+.contacts__wrapper {
   padding: 42px 39px 15px 39px;
   box-sizing: border-box;
   text-align: center;
+  width: 320px;
+  margin: 0 auto;
+
+  @include tablet {
+    padding: 42px 10px 5px 10px;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    padding: 55px 115px 0 115px;
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 660px) {
   .contacts {
-    padding: 42px 10px 5px 10px;
     min-height: 404px;
   }
 }
@@ -16,7 +32,6 @@
 @media (min-width: 1200px) {
   .contacts {
     min-height: 361px;
-    padding: 55px 115px 0 115px;
   }
 }
 

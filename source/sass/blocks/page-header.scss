@@ -2,13 +2,11 @@
   background-color: #283645;
 }
 
-.page-header > a {
+.page-header__logo-wrapper > a {
   display: block;
   padding-top: 23px;
-  padding-left: 20px;
   min-height: 69px;
   box-sizing: border-box;
-  border-bottom: 1px solid #000000;
   width: fit-content;
 
   @include tablet {
@@ -16,86 +14,84 @@
   }
 }
 
-.logo-pink-white-tablet,
-.logo-pink-white-desktop {
-  display: none;
-}
-
-.logo-pink-white-mobile {
-  fill: #ffffff;
-}
-
-.logo-pink-white-mobile:hover {
-  fill: #d22856;
-}
-
-.logo-pink-white-mobile:active {
-  fill: #ffffff;
-  opacity: 0.3;
-}
-
 @media (min-width: 660px) {
-  .logo-pink-white-mobile,
-  .logo-pink-white-desktop {
-    display: none;
-  }
-
-  .logo-pink-white-tablet {
-    display: block;
-    fill: #ffffff;
-  }
-
-  .logo-pink-white-tablet:hover {
-    fill: #d22856;
-  }
-
-  .logo-pink-white-tablet:active {
-    fill: #ffffff;
-    opacity: 0.3;
-  }
-}
-
-@media (min-width: 1200px) {
-  .logo-pink-white-mobile,
-  .logo-pink-white-tablet {
-    display: none;
-  }
-
-  .logo-pink-white-desktop {
-    display: block;
-    fill: #ffffff;
-  }
-
-  .logo-pink-white-desktop:hover {
-    fill: #d22856;
-  }
-
-  .logo-pink-white-desktop:active {
-    fill: #ffffff;
-    opacity: 0.3;
-  }
-}
-
-@media (min-width: 660px) {
-  .page-header > a {
+  .page-header__logo-wrapper > a {
     min-height: 109px;
   }
 }
 
 @media (min-width: 1200px) {
   .page-header {
-    display: flex;
     background-color: fade-out($color: #000000, $amount: 0.7);
     position: absolute;
     z-index: 1;
     width: 100%;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
     padding: 0 130px;
     box-sizing: border-box;
   }
 
-  .page-header > a {
+  .page-header__logo-wrapper > a {
     padding: 0;
     padding-top: 27px;
     border: 0;
   }
+}
+
+.page-header__logo-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 20px;
+  box-sizing: border-box;
+
+  @include tablet {
+    width: 660px;
+  }
+
+  @include desktop {
+    width: 168px;
+  }
+}
+
+.page-header__toggle {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  border: none;
+  background-color: #283645;
+  padding: 0;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.page-header__toggle::after {
+  content: "";
+  width: 29px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  left: -3px;
+  top: 10px;
+  transform: rotate(45deg);
+}
+
+.page-header__toggle::before {
+  content: "";
+  width: 29px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  left: -3px;
+  top: 10px;
+  transform: rotate(135deg);
 }

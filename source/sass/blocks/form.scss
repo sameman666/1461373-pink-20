@@ -6,15 +6,15 @@
   cursor: pointer;
 }
 
-@media (min-width: 1200px) {
-  .form {
-    padding: 0 110px;
-  }
-}
-
 .form__field {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 660px;
+  }
 }
 
 .form legend {
@@ -36,7 +36,9 @@
   .form__field {
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 12px;
+    width: 1200px;
+    padding: 0 110px;
+    box-sizing: border-box;
   }
 }
 
@@ -285,11 +287,12 @@
   }
 }
 
-input[type="checkbox"] {
+.form__achievements-input,
+.form__apps-input {
   display: none;
 }
 
-input[type="checkbox"] + label::before {
+.form__achievements-input + .form__achievements-label::before {
   content: "";
   position: absolute;
   width: 38px;
@@ -302,15 +305,15 @@ input[type="checkbox"] + label::before {
   background-color: #ffffff;
 }
 
-input[type="checkbox"] + label:hover::before {
+.form__achievements-input + .form__achievements-label:hover::before {
   border-color: #283645;
 }
 
-input[type="checkbox"] + label:active::before {
+.form__achievements-input + .form__achievements-label:active::before {
   border-color: #d22856;
 }
 
-input[type="checkbox"]:checked + label::after {
+.form__achievements-input:checked + .form__achievements-label::after {
   content: "";
   position: absolute;
   width: 38px;
@@ -327,19 +330,15 @@ input[type="checkbox"]:checked + label::after {
   background-color: #ffffff;
 }
 
-input[type="checkbox"]:checked + label:hover::after {
+.form__achievements-input + .form__achievements-label:hover::after {
   border-color: #283645;
 }
 
-input[type="checkbox"]:checked + label:active::after {
+.form__achievements-input + .form__achievements-label:active::after {
   border-color: #d22856;
 }
 
-input[type="radio"] {
-  display: none;
-}
-
-input[type="radio"] + label::before {
+.form__apps-input + .form__apps-label::before {
   content: "";
   position: absolute;
   width: 40px;
@@ -352,7 +351,7 @@ input[type="radio"] + label::before {
   left: 0;
 }
 
-input[type="radio"]:checked + label::after {
+.form__apps-input:checked + .form__apps-label::after {
   content: "";
   position: absolute;
   width: 40px;
@@ -367,6 +366,15 @@ input[type="radio"]:checked + label::after {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+}
+
+.form__apps-input + .form__apps-label:hover::before,
+.form__apps-input + .form__apps-label:hover::after {
+  border-color: #283645;
+}
+
+.form__apps-input + .form__apps-label:active::after {
+  border-color: #d22856;
 }
 
 @media (min-width: 660px) {
@@ -387,6 +395,7 @@ input[type="radio"]:checked + label::after {
 
 .form textarea {
   resize: none;
+  font-family: inherit;
 }
 
 @media (min-width: 660px) {
@@ -412,9 +421,9 @@ input[type="radio"]:checked + label::after {
 }
 
 .form__input--big {
-  height: 201px;
+  min-height: 201px;
   margin-top: 16px;
-  width: 280px;
+  width: 100%;
   box-sizing: border-box;
   padding-top: 13px;
 }
@@ -458,9 +467,9 @@ input[type="radio"]:checked + label::after {
 
 @media (min-width: 660px) {
   .form__input--big {
-    width: 496px;
+    width: 100%;
     margin-top: 36px;
-    height: 192px;
+    min-height: 192px;
     padding-left: 18px;
   }
 }
@@ -468,8 +477,8 @@ input[type="radio"]:checked + label::after {
 @media (min-width: 1200px) {
   .form__input--big {
     margin-top: 33px;
-    width: 816px;
-    height: 128px;
+    width: 100%;
+    min-height: 128px;
   }
 }
 

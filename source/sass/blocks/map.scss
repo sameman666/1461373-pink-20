@@ -38,3 +38,17 @@
     min-height: 502px;
   }
 }
+
+.map iframe {
+  display: block;
+  width: 100%;
+  height: 200px;
+
+  @include tablet {
+    height: 374px;
+  }
+
+  @include desktop {
+    height: 502px;
+  }
+}

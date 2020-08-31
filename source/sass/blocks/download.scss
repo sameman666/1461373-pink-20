@@ -1,12 +1,24 @@
 .download {
   background-color: #1d2631;
   min-height: 271px;
+}
+
+.download__wrapper {
   width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 28px 20px 30px 20px;
   box-sizing: border-box;
+  margin: 0 auto;
+
+  @include tablet {
+    margin-left: 0;
+  }
+
+  @include desktop {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 660px) {
@@ -15,12 +27,15 @@
     position: relative;
     padding: 0;
     padding-top: 30px;
+    width: 660px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1200px) {
   .download {
     padding-top: 35px;
+    width: 1200px;
   }
 }
 
