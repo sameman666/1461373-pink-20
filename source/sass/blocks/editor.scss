@@ -22,12 +22,16 @@
   @include tablet {
     line-height: 0;
   }
+
+  @include desktop {
+    padding-top: 2px;
+  }
 }
 
 .editor__options {
   display: flex;
   min-height: 120px;
-  padding: 0 37px;
+  padding: 0 36px;
   padding-top: 4px;
   box-sizing: border-box;
   align-items: center;
@@ -44,6 +48,8 @@
 
 .editor__options svg:hover {
   fill: rgba(#283645, 0.5);
+
+  @include hover;
 }
 
 .editor__buttons {
@@ -110,6 +116,8 @@
 .editor__button-upload:hover {
   color: #ffffff;
   background-color: #d22856;
+
+  @include hover;
 }
 
 .editor__button-upload:active {
@@ -124,6 +132,8 @@
 .editor__button-cancel:hover {
   color: rgba(#283645, 0.3);
   border: 3px solid rgba(#283645, 0.3);
+
+  @include hover;
 }
 
 .editor__button-cancel:active {
@@ -132,12 +142,16 @@
   border-color: rgba(#283645, 0);
 }
 
+.editor__block {
+  width: 100%;
+}
+
 @media (min-width: 660px) {
   .editor__wrapper {
     display: flex;
     min-height: 511px;
     box-sizing: border-box;
-    padding-top: 57px;
+    padding-top: 35px;
     flex-direction: row;
     width: 660px;
   }
@@ -146,6 +160,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding-top: 18px;
   }
 
   .editor__options {
@@ -189,7 +204,11 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
+  .editor__block {
+    padding-top: 2px;
+  }
+
   .editor__range {
     width: 288px;
   }
@@ -207,19 +226,20 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .editor__options {
     width: 182px;
     padding-top: 0;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .editor__wrapper {
     width: 940px;
     margin: 0 auto;
     min-height: 514px;
-    padding: 57px 60px 0 80px;
+    padding: 54px 60px 0 80px;
+    align-items: stretch;
   }
 
   .editor__buttons {
@@ -252,7 +272,7 @@
   height: 1px;
   background-color: rgba(#283645, 0.1);
   position: absolute;
-  left: -26px;
+  left: -21px;
   top: 36px;
 
   @include tablet {

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <div class="page__body-wrapper">
@@ -12,13 +12,13 @@
         <div class="page-header__wrapper">
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo" href="index.html">
-                <svg class="logo-pink-white-mobile" width="74.426px" height="22.859px">
+                <svg class="logo-pink-white" width="74.426px" height="22.859px">
                   <use xlink:href="./img/sprite/sprite.svg#logo-pink-white-mobile"></use>
                 </svg>
-                <svg class="logo-pink-white-tablet" width="146.3px" height="40.375px">
+                <svg class="logo-pink-white-glasses" width="146.3px" height="40.375px">
                   <use xlink:href="./img/sprite/sprite.svg#logo-pink-white-tablet"></use>
                 </svg>
-                <svg class="logo-pink-white-desktop" width="146.3px" height="40.375px">
+                <svg class="logo-pink-white-stars" width="146.3px" height="40.375px">
                   <use xlink:href="./img/sprite/sprite.svg#logo-pink-white-desktop"></use>
                 </svg>
             </a>
@@ -26,30 +26,29 @@
             </button>
           </div>
           <nav class="main-nav">
-
-              <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                  <li class="site-list__item">
-                    <a>
-                      Главная
-                    </a>
-                  </li>
-                  <li class="site-list__item">
-                    <a href="photo.html">
-                      Фотографии
-                    </a>
-                  </li>
-                  <li class="site-list__item">
-                    <a href="form.html" class="site-list__link--active">
-                      Конкурс
-                    </a>
-                  </li>
-                  <li class="site-list__item">
-                    <a href="#">
-                      HTML Academy
-                    </a>
-                </ul>
-              </div>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a href="index.html" class="site-list__link">
+                    Главная
+                  </a>
+                </li>
+                <li class="site-list__item">
+                  <a href="photo.html" class="site-list__link">
+                    Фотографии
+                  </a>
+                </li>
+                <li class="site-list__item">
+                  <a href="form.html" class="site-list__link site-list__link--active">
+                    Конкурс
+                  </a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#" class="site-list__link">
+                    HTML Academy
+                  </a>
+              </ul>
+            </div>
           </nav>
         </div>
       </header>
@@ -113,7 +112,7 @@
                 <div class="form__contacts-wrapper">
                   <div class="form__input-block">
                     <label class="form__label" for="phone">Номер телефона</label>
-                    <input class="form__input form__input--phone" type="number" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                    <input class="form__input form__input--phone" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" id="phone" name="phone" placeholder="Номер, пожалуйста">
                   </div>
                   <div class="form__input-block">
                     <label class="form__label" for="email">Адрес почты</label>
@@ -143,8 +142,8 @@
             </div>
             <div class="form__block form__block--emotions">
               <fieldset class="form__emotions">
-                <legend class="form__apps-title">Опишите свои эмоции</legend>
-                <textarea class="form__input form__input--big" type="text" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                <legend class="form__emotions-title">Опишите свои эмоции</legend>
+                <textarea class="form__input form__input--big" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </fieldset>
             </div>
             <div class="form__block form__block--submit">
@@ -172,10 +171,10 @@
       <footer class="page-footer">
         <div class="page-footer__wrapper">
           <a class="page-footer__link" href="index.html">
-            <svg class="logo-pink-blue-mobile" width="146.3px" height="40.375px">
+            <svg class="logo-pink-blue" width="146.3px" height="40.375px">
               <use xlink:href="./img/sprite/sprite.svg#logo-pink-blue-mobile"></use>
             </svg>
-            <svg class="logo-pink-blue-desktop" width="146.3px" height="40.375px">
+            <svg class="logo-pink-blue-stars" width="146.3px" height="40.375px">
               <use xlink:href="./img/sprite/sprite.svg#logo-pink-blue-desktop"></use>
             </svg>
           </a>
@@ -184,21 +183,21 @@
               <li class="social-list__item">
                 <a class="social-list__link social-list__link--twitter" href="#" aria-label="Перейти в Twitter">
                   <svg width="17.5px" height="14.663px">
-                    <use xlink:href="./img/sprite/sprite.svg#logo-twitter"></use>
+                    <use xlink:href="./img/sprite/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-list__item">
                 <a class="social-list__link social-list__link--facebook" href="#" aria-label="Перейти в Facebook">
                   <svg width="8.673px" height="18.944px">
-                    <use xlink:href="./img/sprite/sprite.svg#logo-facebook"></use>
+                    <use xlink:href="./img/sprite/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-list__item">
                 <a class="social-list__link social-list__link--youtube" href="#" aria-label="Перейти на Youtube">
                   <svg width="14.64px" height="13.96px">
-                    <use xlink:href="./img/sprite/sprite.svg#logo-youtube"></use>
+                    <use xlink:href="./img/sprite/sprite.svg#icon-youtube"></use>
                   </svg>
                 </a>
               </li>
@@ -208,7 +207,7 @@
             <span>Разработано</span>
             <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__credits-logo">
               <svg width="40" height="40">
-                <use xlink:href="./img/sprite/sprite.svg#logo-html-academy"></use>
+                <use xlink:href="./img/sprite/sprite.svg#logo-htmlacademy"></use>
               </svg>
             </a>
           </section>

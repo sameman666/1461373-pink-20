@@ -9,7 +9,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 320px;
+
+  @include mobile-wrapper;
   margin: 0 auto;
 
   @include tablet {
@@ -17,49 +18,15 @@
     flex-direction: row;
     padding: 0 20px;
     padding-right: 14px;
-    width: 660px;
+
+    @include tablet-wrapper;
   }
 
   @include desktop {
-    width: 1200px;
-    padding: 0 123px 0 130px;
-  }
-}
-
-.logo-pink-blue-desktop {
-  display: none;
-  fill: #283645;
-}
-
-.logo-pink-blue-mobile {
-  fill: #283645;
-}
-
-.logo-pink-blue-mobile:hover {
-  fill: #d22856;
-}
-
-.logo-pink-blue-mobile:active {
-  fill: #283645;
-  opacity: 0.3;
-}
-
-.logo-pink-blue-desktop:hover {
-  fill: #d22856;
-}
-
-.logo-pink-blue-desktop:active {
-  fill: #283645;
-  opacity: 0.3;
-}
-
-@media (min-width: 1200px) {
-  .logo-pink-blue-mobile {
-    display: none;
-  }
-
-  .logo-pink-blue-desktop {
-    display: block;
+    @include desktop-wrapper;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 3px;
   }
 }
 
@@ -70,9 +37,8 @@
 .page-footer__credits {
   display: flex;
   align-items: center;
-  margin-top: 34px;
-  align-self: flex-end;
-  margin-left: 20px;
+  margin-top: 28px;
+  margin-left: 7px;
 
   span {
     font-size: 14px;
@@ -84,10 +50,13 @@
 .page-footer__credits-logo {
   margin-left: 9px;
   fill: #d22856;
+  margin-top: 4px;
 }
 
 .page-footer__credits-logo:hover {
   fill: #283645;
+
+  @include hover;
 }
 
 .page-footer__credits-logo:active {
@@ -108,14 +77,15 @@
   .page-footer__social {
     margin: 0;
     width: 33.3%;
-    padding: 0 73px;
-    padding-top: 37px;
-    padding-left: 66px;
+    padding: 0 70px;
+    padding-top: 34px;
+    padding-left: 73px;
   }
 
   .page-footer__credits {
     width: 33.3%;
     justify-content: flex-end;
+    margin-top: 35px;
   }
 
   .page-footer__credits-logo img {
@@ -124,13 +94,13 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .page-footer {
     min-height: 197px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .page-footer__link {
     width: 40%;
     margin-top: 69px;
@@ -144,10 +114,11 @@
   .page-footer__credits {
     margin: 0;
     width: 40%;
+    padding-top: 65px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .page-footer__credits span {
     font-size: 18px;
   }

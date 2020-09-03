@@ -37,7 +37,7 @@
     @include desktop {
       font-size: 120px;
       margin-top: 122px;
-      margin-left: 212px;
+      margin-left: 92px;
     }
   }
 
@@ -74,22 +74,22 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .effect {
     background-color: #f2f2f2;
   }
 
   .effect__wrapper {
-    width: 1200px;
+    width: 960px;
     margin: 0 auto;
     min-height: 423px;
   }
 
   .effect__image {
-    width: 500px;
+    width: 380px;
     padding: 0;
     background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
-    background-position: 154px 81px, 129px 6px;
+    background-position: 34px 81px, 7px 6px;
     background-size: 252px 252px, 305px 357px;
   }
 

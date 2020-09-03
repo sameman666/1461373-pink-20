@@ -6,6 +6,8 @@
 @media (min-width: 660px) {
   .prices-slider {
     min-height: 290px;
+    display: flex;
+    justify-content: center;
   }
 }
 

@@ -4,7 +4,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .site-list {
     flex-direction: row;
     justify-content: space-between;
@@ -18,7 +18,7 @@
   line-height: 32px;
   font-weight: bold;
   text-align: center;
-  min-height: 63px;
+  min-height: 62px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid #000000;
   display: flex;
@@ -26,13 +26,17 @@
   align-items: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .site-list__item {
     font-weight: normal;
     text-transform: none;
     font-size: 18px;
     line-height: 18px;
     border: none;
+    box-sizing: border-box;
+    align-items: stretch;
+    padding-top: 12px;
+    min-height: 42px;
   }
 }
 
@@ -44,6 +48,8 @@
 
 .site-list__item a:hover {
   color: #d22856;
+
+  @include hover;
 }
 
 .site-list__item a:active {

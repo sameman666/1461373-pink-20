@@ -6,17 +6,3 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
-
-// .page__body-wrapper {
-//   width: 320px;
-//   margin: 0 auto;
-//   position: relative;
-
-//   @include tablet {
-//     width: 660px;
-//   }
-
-//   @include desktop {
-//     width: 1200px;
-//   }
-// }
