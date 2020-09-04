@@ -69,6 +69,7 @@
   @include desktop {
     width: 168px;
     padding-left: 10px;
+    border-bottom: none;
   }
 }
 
@@ -90,25 +91,3 @@
     display: none;
   }
 }
-
-// .page-header__toggle::after {
-//   content: "";
-//   width: 29px;
-//   height: 2px;
-//   background-color: #ffffff;
-//   position: absolute;
-//   left: -3px;
-//   top: 10px;
-//   transform: rotate(45deg);
-// }
-
-// .page-header__toggle::before {
-//   content: "";
-//   width: 29px;
-//   height: 2px;
-//   background-color: #ffffff;
-//   position: absolute;
-//   left: -3px;
-//   top: 10px;
-//   transform: rotate(135deg);
-// }

@@ -549,9 +549,8 @@
   }
 
   .form__achievements-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 315px 296px 253px;
   }
 }
 
