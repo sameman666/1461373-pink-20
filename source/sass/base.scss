@@ -10,158 +10,109 @@ a {
   display: none;
 }
 
-:hover {
-  transition: 0.2s;
-}
-
-.icon-editor-crop {
-  width: 44px;
-  height: 44px;
-
-  @include tablet {
-    width: 22px;
-    height: 22px;
-    margin-left: 20px;
-  }
-
-  @include desktop {
-    width: 49px;
-    height: 49px;
-    margin-left: 41px;
-  }
-}
-
-.icon-editor-fill {
-  width: 51px;
-  height: 45px;
-  margin-left: 35px;
-  margin-top: 6px;
-
-  @include tablet {
-    width: 24px;
-    height: 22px;
-    margin-top: 54px;
-    margin-left: 18px;
-    fill: #d22856;
-  }
-
-  @include desktop {
-    width: 48px;
-    height: 48px;
-    margin-top: 22px;
-    margin-left: 45px;
-  }
-}
-
-.icon-editor-contrast {
-  width: 32px;
-  height: 32px;
-  margin-left: 33px;
-
-  @include tablet {
-    width: 16px;
-    height: 16px;
-    margin-top: 48px;
-    margin-left: 20px;
-    fill: #d22856;
-  }
-
-  @include desktop {
-    width: 32px;
-    height: 32px;
-    margin-top: 28px;
-    margin-left: 42px;
-  }
-}
-
-.logo-pink-white-tablet,
-.logo-pink-white-desktop {
+.logo-pink-white-glasses,
+.logo-pink-white-stars {
   display: none;
 }
 
-.logo-pink-white-mobile {
+.logo-pink-white {
   fill: #ffffff;
 }
 
-.logo-pink-white-mobile:hover {
+.logo-pink-white:hover {
   fill: #d22856;
+
+  @include hover;
 }
 
-.logo-pink-white-mobile:active {
+.logo-pink-white:active {
   fill: #ffffff;
   opacity: 0.3;
 }
 
 @media (min-width: 660px) {
-  .logo-pink-white-mobile,
-  .logo-pink-white-desktop {
+  .logo-pink-white,
+  .logo-pink-white-stars {
     display: none;
   }
 
-  .logo-pink-white-tablet {
+  .logo-pink-white-glasses {
     display: block;
     fill: #ffffff;
   }
 
-  .logo-pink-white-tablet:hover {
+  .logo-pink-white-glasses:hover {
     fill: #d22856;
+
+    @include hover;
   }
 
-  .logo-pink-white-tablet:active {
+  .logo-pink-white-glasses:active {
     fill: #ffffff;
     opacity: 0.3;
   }
 }
 
-@media (min-width: 1200px) {
-  .logo-pink-white-mobile,
-  .logo-pink-white-tablet {
+@media (min-width: 960px) {
+  .logo-pink-white,
+  .logo-pink-white-glasses {
     display: none;
   }
 
-  .logo-pink-white-desktop {
+  .logo-pink-white-stars {
     display: block;
     fill: #ffffff;
   }
 
-  .logo-pink-white-desktop:hover {
+  .logo-pink-white-stars:hover {
     fill: #d22856;
+
+    @include hover;
   }
 
-  .logo-pink-white-desktop:active {
+  .logo-pink-white-stars:active {
     fill: #ffffff;
     opacity: 0.3;
   }
 }
 
-.icon-review-arrow-left,
-.icon-review-arrow-right {
-  fill: rgba(#283645, 0.3);
+.logo-pink-blue-stars {
   display: none;
-  position: absolute;
-  cursor: pointer;
+  fill: #283645;
+}
 
-  @include desktop {
+.logo-pink-blue {
+  fill: #283645;
+}
+
+.logo-pink-blue:hover {
+  fill: #d22856;
+
+  @include hover;
+}
+
+.logo-pink-blue:active {
+  fill: #283645;
+  opacity: 0.3;
+}
+
+.logo-pink-blue-stars:hover {
+  fill: #d22856;
+
+  @include hover;
+}
+
+.logo-pink-blue-stars:active {
+  fill: #283645;
+  opacity: 0.3;
+}
+
+@media (min-width: 960px) {
+  .logo-pink-blue {
+    display: none;
+  }
+
+  .logo-pink-blue-stars {
     display: block;
   }
-}
-
-.icon-review-arrow-left:hover,
-.icon-review-arrow-right:hover {
-  fill: rgba(#283645, 0.6);
-}
-
-.icon-review-arrow-left:active,
-.icon-review-arrow-right:active {
-  fill: rgba(#283645, 0.1);
-}
-
-.icon-review-arrow-left {
-  left: 130px;
-  top: 212px;
-}
-
-.icon-review-arrow-right {
-  right: 130px;
-  top: 212px;
 }

@@ -25,10 +25,10 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .photos__block-wrapper {
-    padding: 0 130px;
-    width: 1200px;
+    padding: 0 10px;
+    width: 960px;
   }
 }
 
@@ -45,7 +45,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .photos__intro {
     width: 572px;
     margin: 0 auto;
@@ -60,11 +60,17 @@
   box-sizing: border-box;
   padding: 44px 20px 20px 20px;
   margin: 0 auto;
-  width: 320px;
+
+  @include mobile-wrapper;
 
   @include tablet {
     padding: 90px 60px 20px 60px;
-    width: 660px;
+
+    @include tablet-wrapper;
+  }
+
+  @include desktop {
+    padding-left: 44px;
   }
 }
 
@@ -74,27 +80,27 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .photos__intro-block {
     min-height: 240px;
   }
 }
 
 .photos__intro-block--down {
-  min-height: 154px;
+  min-height: 132px;
   padding-top: 22px;
 }
 
 @media (min-width: 660px) {
   .photos__intro-block--down {
-    min-height: 174px;
+    min-height: 128px;
     padding-top: 45px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .photos__intro-block--down {
-    min-height: 131px;
+    min-height: 126px;
     padding-top: 5px;
   }
 }
@@ -103,7 +109,7 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .photos__block {
     margin-bottom: 54px;
   }
@@ -158,7 +164,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .photos__description {
     padding-left: 27px;
   }
@@ -171,7 +177,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .photos__block img {
     height: 400px;
   }
@@ -179,7 +185,7 @@
 
 .photos__block--first img {
   width: 100%;
-  height: auto;
+  height: fit-content;
 }
 
 .photos__block--first .photos__description {
@@ -194,7 +200,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .photos__block--first .photos__description {
     display: flex;
     flex-wrap: wrap;
@@ -249,7 +255,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .photos__block--first .photos__like::before {
     bottom: 54px;
   }
@@ -289,6 +295,6 @@
 
   @include desktop {
     top: 54px;
-    right: 130px;
+    right: 10px;
   }
 }

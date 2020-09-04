@@ -15,7 +15,7 @@
 }
 
 @mixin desktop {
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     @content;
   }
 }
@@ -24,4 +24,22 @@
   @media (min-resolution: 1.5dppx) {
     @content;
   }
+}
+
+@mixin hover {
+  &:hover {
+    transition: 0.2s;
+  }
+}
+
+@mixin mobile-wrapper {
+  width: 320px;
+}
+
+@mixin tablet-wrapper {
+  width: 660px;
+}
+
+@mixin desktop-wrapper {
+  width: 960px;
 }

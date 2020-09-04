@@ -31,6 +31,8 @@
 
 .social-list__item:hover {
   border-color: #283645;
+
+  @include hover;
 }
 
 .social-list__item:active {

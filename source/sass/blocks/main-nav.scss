@@ -4,12 +4,19 @@
   position: relative;
 }
 
-@media (min-width: 1200px) {
+.main-nav--closed {
+  @media (max-width: 959px) {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
   .main-nav {
     flex-direction: row;
     flex-grow: 1;
-    padding-left: 106px;
+    padding-left: 162px;
     padding-top: 23px;
+    padding-right: 10px;
   }
 
   .main-nav__wrapper {

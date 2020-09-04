@@ -17,11 +17,7 @@
   }
 }
 
-.form legend {
-  padding: 0 31px;
-}
-
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .form__contacts-wrapper {
     display: flex;
     justify-content: space-between;
@@ -32,12 +28,12 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .form__field {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1200px;
-    padding: 0 110px;
+    width: 960px;
+    padding: 0;
     box-sizing: border-box;
   }
 }
@@ -78,7 +74,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .form__block--data {
     width: 50%;
   }
@@ -104,7 +100,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .form__block--contacts {
     display: flex;
   }
@@ -127,7 +123,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .form__title {
     width: 756px;
   }
@@ -140,18 +136,13 @@
   box-sizing: border-box;
 }
 
-@media (min-width: 1200px) {
-  .form__block--data {
-    padding-right: 35px;
-  }
-
-  .form__block--apps {
-    padding-left: 35px;
-  }
-}
-
 .form__block--contacts {
   padding-top: 32px;
+
+  @include desktop {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .form__block--apps {
@@ -179,6 +170,14 @@
   }
 }
 
+@media (min-width: 960px) {
+  .form__block--emotions {
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .form__block--submit {
   padding-top: 18px;
   padding-bottom: 17px;
@@ -199,9 +198,12 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .form__block--submit {
     padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 43px;
   }
 }
 
@@ -227,7 +229,19 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
+  .form__block--data {
+    padding-right: 35px;
+    padding-left: 10px;
+    padding-top: 63px;
+  }
+
+  .form__block--apps {
+    padding-left: 35px;
+  }
+}
+
+@media (min-width: 960px) {
   .form__block--contacts .form__input-block {
     margin-bottom: 0;
   }
@@ -244,6 +258,8 @@
 
 .form__input:hover {
   border-color: #283645;
+
+  @include hover;
 }
 
 .form__input:focus {
@@ -255,8 +271,12 @@
   position: relative;
 }
 
-.form__contacts-wrapper::before,
-.form__contacts-wrapper::after {
+.form__contacts-wrapper .form__input-block {
+  position: relative;
+}
+
+.form__contacts-wrapper .form__input-block:first-child::before,
+.form__contacts-wrapper .form__input-block:last-child::after {
   @include tablet {
     content: "";
     position: absolute;
@@ -271,19 +291,18 @@
   }
 
   @include desktop {
-    right: 444px;
+    right: -1px;
   }
 }
 
-.form__contacts-wrapper::after {
+.form__contacts-wrapper .form__input-block:last-child::after {
   @include tablet {
     background-image: url("../img/icon-mail.svg");
-    top: 133px;
   }
 
   @include desktop {
     top: 0;
-    right: 0;
+    right: -1px;
   }
 }
 
@@ -307,6 +326,7 @@
 
 .form__achievements-input + .form__achievements-label:hover::before {
   border-color: #283645;
+  transition: 0.2s;
 }
 
 .form__achievements-input + .form__achievements-label:active::before {
@@ -332,6 +352,7 @@
 
 .form__achievements-input + .form__achievements-label:hover::after {
   border-color: #283645;
+  transition: 0.2s;
 }
 
 .form__achievements-input + .form__achievements-label:active::after {
@@ -371,8 +392,10 @@
 .form__apps-input + .form__apps-label:hover::before,
 .form__apps-input + .form__apps-label:hover::after {
   border-color: #283645;
+  transition: 0.2s;
 }
 
+.form__apps-input + .form__apps-label:active::before,
 .form__apps-input + .form__apps-label:active::after {
   border-color: #d22856;
 }
@@ -453,6 +476,8 @@
 .form__button:hover {
   background-color: #1c9b5e;
   border-color: #1c9b5e;
+
+  @include hover;
 }
 
 .form__button:active {
@@ -474,7 +499,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .form__input--big {
     margin-top: 33px;
     width: 100%;
@@ -511,44 +536,44 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .form__block--apps {
-    padding-top: 38px;
+    padding-top: 50px;
+    padding-right: 10px;
   }
 
   .form__block--achievements {
     min-height: 290px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .form__achievements-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .form__achievements-item:nth-child(2) {
     order: 3;
   }
 
   .form__achievements-item:nth-child(3) {
     order: 1;
-    margin-left: 58px;
   }
 
   .form__achievements-item:nth-child(4) {
     order: 4;
-    margin-left: 96px;
   }
 
   .form__achievements-item:nth-child(5) {
     order: 2;
-    margin-left: 57px;
   }
 
   .form__achievements-item:nth-child(6) {
     order: 5;
-    margin-left: 67px;
   }
 }
 
@@ -577,21 +602,6 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .form__contacts {
-    padding-top: 33px;
-    min-height: 170px;
-  }
-
-  .form__achievements {
-    min-height: 236px;
-  }
-
-  .form__emotions {
-    min-height: 219px;
-  }
-}
-
 .form__contacts legend {
   display: none;
 }
@@ -614,7 +624,23 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
+  .form__contacts {
+    padding-top: 33px;
+    min-height: 170px;
+  }
+
+  .form__achievements {
+    min-height: 236px;
+    padding-right: 10px;
+  }
+
+  .form__emotions {
+    min-height: 219px;
+  }
+}
+
+@media (min-width: 960px) {
   .form__apps {
     padding-left: 50px;
     padding-right: 0;
@@ -623,7 +649,8 @@
 
 .form__achievements-title,
 .form__apps-title,
-.form__contacts-title {
+.form__contacts-title,
+.form__emotions-title {
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
@@ -644,13 +671,17 @@
 
 @media (min-width: 660px) {
   .form__achievements-list {
-    padding-top: 48px;
+    padding-top: 45px;
   }
 }
 
 .form__achievements-item {
   margin-bottom: 52px;
   position: relative;
+
+  @include desktop {
+    width: 257px;
+  }
 }
 
 .form__achievements-item:last-child {
@@ -667,7 +698,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .form__apps-list {
     padding-top: 48px;
     padding-left: 23px;
@@ -730,7 +761,7 @@
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .form__additional-text {
     display: inline;
   }
@@ -805,5 +836,37 @@
 @media (min-width: 660px) {
   .form__title--appeal {
     display: inline;
+  }
+}
+
+.form__contacts-wrapper .form__input {
+  @include tablet {
+    width: 410px;
+  }
+
+  @include desktop {
+    width: 286px;
+  }
+}
+
+.form__achievements-title {
+  padding: 0 20px;
+}
+
+@media (min-width: 660px) {
+  .form__apps-title {
+    padding: 0 25px;
+  }
+
+  .form__contacts-title {
+    padding: 0 32px;
+  }
+
+  .form__achievements-title {
+    padding: 0 31px;
+  }
+
+  .form__emotions-title {
+    padding: 0 38px;
   }
 }

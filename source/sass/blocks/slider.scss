@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .slider__toggles {
     display: none;
   }
@@ -25,6 +25,8 @@
 
 .slider__toggle:hover {
   background-color: fade-out(#283645, 0.4);
+
+  @include hover;
 }
 
 .slider__toggle:active {
