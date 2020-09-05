@@ -27,6 +27,24 @@
   }
 }
 
+.map:before {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  border-right: 50vw solid transparent;
+  border-top: 35px solid #fff;
+  border-left: 50vw solid transparent;
+
+  @include tablet {
+    border-top-width: 69px;
+  }
+
+  @include desktop {
+    border-top-width: 104px;
+  }
+}
+
 @media (min-width: 660px) {
   .map {
     min-height: 374px;
