@@ -27,13 +27,13 @@
   }
 }
 
-.map:before {
+.map::before {
   display: block;
   content: "";
   position: absolute;
   z-index: 1;
   border-right: 50vw solid transparent;
-  border-top: 35px solid #fff;
+  border-top: 35px solid #ffffff;
   border-left: 50vw solid transparent;
 
   @include tablet {
