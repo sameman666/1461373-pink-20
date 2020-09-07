@@ -35,7 +35,7 @@
     border: none;
     box-sizing: border-box;
     align-items: stretch;
-    padding-top: 12px;
+    padding-top: 23px;
     min-height: 42px;
   }
 }
@@ -43,7 +43,11 @@
 .site-list__item a {
   color: #ffffff;
   text-decoration: none;
-  line-height: 40px;
+  line-height: 32px;
+
+  @include desktop {
+    line-height: 18px;
+  }
 }
 
 .site-list__item a:hover {
@@ -57,8 +61,20 @@
   opacity: 0.3;
 }
 
-.site-list__link--active {
+.site-list__link {
   @include desktop {
-    border-bottom: 2px solid #ffffff;
+    position: relative;
+  }
+}
+
+.site-list__link--active::after {
+  @include desktop {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    left: 0;
+    bottom: -11px;
   }
 }

@@ -9,6 +9,8 @@
   flex-direction: column;
   background-size: 100%;
   background-position-y: -67px;
+  overflow: hidden;
+  background-color: #283645;
 
   @include retina {
     background-image: url("../img/bg-back-mobile@2x.jpg");

@@ -12,7 +12,7 @@
   }
 }
 
-.slider-toggle {
+.slider__toggle {
   width: 6px;
   height: 6px;
   background-color: fade-out(#283645, 0.7);
@@ -23,21 +23,21 @@
   cursor: pointer;
 }
 
-.slider-toggle:hover {
+.slider__toggle:hover {
   background-color: fade-out(#283645, 0.4);
 
   @include hover;
 }
 
-.slider-toggle:active {
+.slider__toggle:active {
   background-color: fade-out(#283645, 0.9);
 }
 
-.slider-toggle:focus {
+.slider__toggle:focus {
   outline: 0;
 }
 
-.slider-toggle--current {
+.slider__toggle--current {
   border: 3px solid #283645;
   background-color: #ffffff;
 }

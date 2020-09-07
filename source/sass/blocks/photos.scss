@@ -185,7 +185,14 @@
 
 .photos__block--first img {
   width: 100%;
-  height: fit-content;
+
+  @include tablet {
+    height: 509px;
+  }
+
+  @include desktop {
+    height: 506px;
+  }
 }
 
 .photos__block--first .photos__description {

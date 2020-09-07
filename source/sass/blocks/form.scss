@@ -635,6 +635,7 @@
   .form__achievements {
     min-height: 236px;
     padding-right: 10px;
+    padding-left: 12px;
   }
 
   .form__emotions {
@@ -644,7 +645,7 @@
 
 @media (min-width: 960px) {
   .form__apps {
-    padding-left: 50px;
+    padding-left: 0;
     padding-right: 0;
   }
 }
@@ -658,6 +659,7 @@
   color: #d22856;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 auto;
 }
 
 .form__achievements-list,
@@ -674,6 +676,12 @@
 @media (min-width: 660px) {
   .form__achievements-list {
     padding-top: 45px;
+  }
+}
+
+@media (min-width: 960px) {
+  .form__achievements-list {
+    padding-left: 47px;
   }
 }
 
@@ -697,13 +705,14 @@
 @media (min-width: 660px) {
   .form__apps-list {
     padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
 
 @media (min-width: 960px) {
   .form__apps-list {
     padding-top: 48px;
-    padding-left: 23px;
+    padding-left: 74px;
   }
 }
 

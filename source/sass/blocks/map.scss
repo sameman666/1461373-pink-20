@@ -32,16 +32,20 @@
   content: "";
   position: absolute;
   z-index: 1;
-  border-right: 50vw solid transparent;
-  border-top: 35px solid #ffffff;
-  border-left: 50vw solid transparent;
+  width: 100%;
+  height: 35px;
+  background-image: url(../img/bg-triangle-white-footer.svg);
+  background-size: 100% 35px;
+  background-repeat: no-repeat;
 
   @include tablet {
-    border-top-width: 69px;
+    background-size: 100% 67px;
+    height: 67px;
   }
 
   @include desktop {
-    border-top-width: 104px;
+    background-size: 100% 104px;
+    height: 104px;
   }
 }
 

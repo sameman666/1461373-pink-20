@@ -102,7 +102,7 @@
   cursor: pointer;
 }
 
-.editor__toggle--active {
+.editor__toggle:active {
   background-color: #d22856;
 }
 
@@ -122,6 +122,7 @@
 
 .editor__button-upload:active {
   color: rgba(#ffffff, 0.3);
+  background-color: #d22856;
 }
 
 .editor__button-cancel {
