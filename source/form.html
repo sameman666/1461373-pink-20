@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <!-- При подключении JS убирается у кнопки класс page-header__toggle--no-js, кнопка становится видимой.
@@ -15,7 +18,7 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrapper">
-          <a class="page-header__logo" href="index.html">
+          <a class="page-header__logo" href="index.html" aria-label="Перейти на главную страницу">
             <svg class="logo-pink-white" width="74" height="23">
               <use xlink:href="./img/sprite/sprite.svg#logo-pink-white-mobile"></use>
             </svg>
@@ -175,7 +178,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__link" href="index.html">
+        <a class="page-footer__link" href="index.html" aria-label="Перейти на главную страницу">
           <svg class="logo-pink-blue" width="146" height="40">
             <use xlink:href="./img/sprite/sprite.svg#logo-pink-blue-mobile"></use>
           </svg>
@@ -212,7 +215,7 @@
         <section class="page-footer__credits">
           <h2 class="visually-hidden">Разработано</h2>
           <span>Разработано</span>
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__credits-logo">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__credits-logo" aria-label="Перейти на сайт HTML Academy">
             <svg width="40" height="40">
               <use xlink:href="./img/sprite/sprite.svg#logo-htmlacademy"></use>
             </svg>

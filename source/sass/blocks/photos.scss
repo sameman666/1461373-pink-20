@@ -107,6 +107,8 @@
 
 .photos__block {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 960px) {
@@ -139,6 +141,7 @@
     width: 300px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
   }
 
   .photos__block--first {

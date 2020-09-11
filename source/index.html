@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <!-- При подключении JS убирается у кнопки класс page-header__toggle--no-js, кнопка становится видимой.
@@ -15,7 +18,7 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrapper">
-          <a class="page-header__logo" href="index.html">
+          <a class="page-header__logo" href="index.html" aria-label="Перейти на главную страницу">
             <svg class="logo-pink-white" width="74" height="23">
               <use xlink:href="./img/sprite/sprite.svg#logo-pink-white-mobile"></use>
             </svg>
@@ -63,6 +66,9 @@
             <h1 class="intro__title">Взгляните на&nbsp;жизнь иначе!</h1>
             <div class="intro__image">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
                 <source media="(min-width:960px)" srcset="img/iphone-hand-desktop@1x.png 1x,
                 img/iphone-hand-desktop@2x.png 2x">
                 <source media="(min-width:660px)" srcset="img/iphone-hand-tablet@1x.png 1x,
@@ -78,17 +84,23 @@
             <ul class="download__list">
               <li class="download__platform">
                 <a class="download__platform download__platform--apple" href="https://www.apple.com/ru/ios/app-store/" aria-label="Скачать в App Store">
-                  <img src="img/logo-apple.svg" alt="Логотип Apple">
+                  <svg width="46" height="57">
+                    <use xlink:href="./img/sprite/sprite.svg#logo-apple"></use>
+                  </svg>
                 </a>
               </li>
               <li class="download__platform">
                 <a class="download__platform download__platform--android" href="https://play.google.com/store/apps" aria-label="Скачать в Play Market">
-                  <img src="img/logo-android.svg" alt="Логотип Android">
+                  <svg width="42" height="47">
+                    <use xlink:href="./img/sprite/sprite.svg#logo-android"></use>
+                  </svg>
                 </a>
               </li>
               <li class="download__platform">
-              <a class="download__platform download__platform--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" aria-label="Скачать в Microsoft Store">
-                  <img src="img/logo-microsoft.svg" alt="Логотип Microsoft">
+                <a class="download__platform download__platform--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" aria-label="Скачать в Microsoft Store">
+                  <svg width="44" height="42">
+                    <use xlink:href="./img/sprite/sprite.svg#logo-microsoft"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -122,12 +134,17 @@
                 </ul>
                 <div class="features__image">
                   <picture>
+                    <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
                     <img src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Айфон с серой фотографией">
                   </picture>
                   <picture>
+                    <source type="image/webp" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
                     <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Айфон с розовой фотографией">
                   </picture>
                   <picture>
+                    <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
                     <source media="(min-width:960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x,
                     img/iphone-screen-3-desktop@2x.png 2x">
                     <source media="(min-width:660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x,
@@ -154,8 +171,8 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__wrapper slider">
-          <svg class="icon-review-arrow-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="42" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
-            <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+          <svg class="icon-review-arrow-left" width="22" height="42">
+            <use xlink:href="./img/sprite/sprite.svg#icon-review-arrow-left"></use>
           </svg>
           <div class="reviews__list">
             <blockquote class="reviews__item">
@@ -164,8 +181,8 @@
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </div>
-          <svg class="icon-review-arrow-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="42" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
-            <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+          <svg class="icon-review-arrow-right" width="22" height="42">
+            <use xlink:href="./img/sprite/sprite.svg#icon-review-arrow-right"></use>
           </svg>
           <div class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button"></button>
@@ -203,20 +220,20 @@
               </dl>
               <dl>
                 <dt class="prices__advantage">Розовый фильтр</dt>
-                <dd><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" fill="#3DC644"/>
+                <dd><svg width="31" height="21">
+                  <use xlink:href="./img/sprite/sprite.svg#icon-yes"></use>
                 </svg></dd>
               </dl>
               <dl>
                 <dt class="prices__advantage">Смайлики</dt>
-                <dd><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="27" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" fill="#F25B26"/>
+                <dd><svg width="27" height="27">
+                  <use xlink:href="./img/sprite/sprite.svg#icon-no"></use>
                 </svg></dd>
               </dl>
               <dl>
                 <dt class="prices__advantage">Комментарии</dt>
-                <dd><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="27" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" fill="#F25B26"/>
+                <dd><svg width="27" height="27">
+                  <use xlink:href="./img/sprite/sprite.svg#icon-no"></use>
                 </svg></dd>
               </dl>
             </div>
@@ -227,20 +244,20 @@
               </dl>
               <dl>
                 <dt class="prices__advantage">Розовый фильтр</dt>
-                <dd><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" fill="#3DC644"/>
+                <dd><svg width="31" height="21">
+                  <use xlink:href="./img/sprite/sprite.svg#icon-yes"></use>
                 </svg></dd>
               </dl>
               <dl>
                 <dt class="prices__advantage">Смайлики</dt>
-                <dd><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" fill="#3DC644"/>
+                <dd><svg width="31" height="21">
+                  <use xlink:href="./img/sprite/sprite.svg#icon-yes"></use>
                 </svg></dd>
               </dl>
               <dl>
                 <dt class="prices__advantage">Комментарии</dt>
-                <dd><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="27" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" fill="#F25B26"/>
+                <dd><svg width="27" height="27">
+                  <use xlink:href="./img/sprite/sprite.svg#icon-no"></use>
                 </svg></dd>
               </dl>
             </div>
@@ -251,20 +268,20 @@
               </dl>
               <dl>
                 <dt class="prices__advantage">Розовый фильтр</dt>
-                <dd><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" fill="#3DC644"/>
+                <dd><svg width="31" height="21">
+                  <use xlink:href="./img/sprite/sprite.svg#icon-yes"></use>
                 </svg></dd>
               </dl>
               <dl>
                 <dt class="prices__advantage">Смайлики</dt>
-                <dd><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" fill="#3DC644"/>
+                <dd><svg width="31" height="21">
+                  <use xlink:href="./img/sprite/sprite.svg#icon-yes"></use>
                 </svg></dd>
               </dl>
               <dl>
                 <dt class="prices__advantage">Комментарии</dt>
-                <dd><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" fill="#3DC644"/>
+                <dd><svg width="31" height="21">
+                  <use xlink:href="./img/sprite/sprite.svg#icon-yes"></use>
                 </svg></dd>
               </dl>
             </div>
@@ -303,7 +320,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__link" href="index.html">
+        <a class="page-footer__link" href="index.html" aria-label="Перейти на главную страницу">
           <svg class="logo-pink-blue" width="146" height="40">
             <use xlink:href="./img/sprite/sprite.svg#logo-pink-blue-mobile"></use>
           </svg>
@@ -340,7 +357,7 @@
         <section class="page-footer__credits">
           <h2 class="visually-hidden">Разработано</h2>
           <span>Разработано</span>
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__credits-logo">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__credits-logo" aria-label="Перейти на сайт HTML Academy">
             <svg width="40" height="40">
               <use xlink:href="./img/sprite/sprite.svg#logo-htmlacademy"></use>
             </svg>
